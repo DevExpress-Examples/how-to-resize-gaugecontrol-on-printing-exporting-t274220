@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfApplication72.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxga="http://schemas.devexpress.com/winfx/2008/xaml/gauges"
+        xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <DataTemplate x:Key="Data">
+            <Grid>
+                <StackPanel>
+                    <dxe:ImageEdit IsPrintingMode="True" Source="{Binding Content}" />
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+        <dxga:CircularGaugeControl x:Name="gauge">
+            <dxga:CircularGaugeControl.Layers>
+                <dxga:CircularGaugeLayer/>
+            </dxga:CircularGaugeControl.Layers>
+            <dxga:CircularGaugeControl.Scales>
+                <dxga:ArcScale>
+                    <dxga:ArcScale.Needles>
+                        <dxga:ArcScaleNeedle Value="30"/>
+                    </dxga:ArcScale.Needles>
+                </dxga:ArcScale>
+            </dxga:CircularGaugeControl.Scales>
+        </dxga:CircularGaugeControl>
+        <Button Content="Print" VerticalAlignment="Bottom" HorizontalAlignment="Left" Click="Button_Click"/>
+    </Grid>
+</Window>
