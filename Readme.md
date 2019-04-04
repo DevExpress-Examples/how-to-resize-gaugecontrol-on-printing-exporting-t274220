@@ -2,7 +2,7 @@
 *Files to look at*:
 
 * [MainWindow.xaml](./CS/WpfApplication72/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/WpfApplication72/MainWindow.xaml))
-* [MainWindow.xaml.cs](./CS/WpfApplication72/MainWindow.xaml.cs) (VB: [MainWindow.xaml](./VB/WpfApplication72/MainWindow.xaml))
+* [MainWindow.xaml.cs](./CS/WpfApplication72/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/WpfApplication72/MainWindow.xaml.vb))
 <!-- default file list end -->
 # How to resize GaugeControl on printing/exporting
 
